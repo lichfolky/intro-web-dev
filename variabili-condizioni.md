@@ -136,3 +136,7 @@ scope
 
 deprecata 
 undefined null
+
+
+  git config --global user.email "mattia.folcarelli@gmail.com"
+  git config --global user.name "Mattia Folcarelli"
