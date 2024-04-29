@@ -68,7 +68,7 @@ Operatori di confronto < <= > >= != ==
 
 ```
 let messaggio = "ciao mondo";
-print(messaggio);
+console.log(messaggio);
 ```
 ## Benvenuto `<inserisci nome>`
 
@@ -97,16 +97,48 @@ Immagina di dover scambiare contenuto di due bicchieri.
 
 parseInt e typeof
 
-es: Somma
+
+## ESERCIZIO A CASA
+es: chiedi due numeri e stampa in console la loro somma
 
 
 ![js tipi dati](/img/webdev101-js-datatypes.png)
 
 ![js logica](/img/webdev101-js-decisions.png)
 
-
 ## Extra
 
 https://www.asciiart.eu/text-to-ascii-art
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures info
+
+
+
+VIM
+
+cmd terminale
+
+git -v
+
+gitlab
+
+scaffolding
+
+
+css bem 
+import
+
+deploy pubblicare
+
+cdn
+
+
+
+
+dominio
+siti
+
+scope
+
+deprecata 
+undefined null

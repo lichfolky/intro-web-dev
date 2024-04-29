@@ -48,8 +48,6 @@ https://github.com/girliemac/a-picture-is-worth-a-1000-words)
 
 [Github](https://github.com/)
 
-[CS50](https://cs50.harvard.edu/college/2024/fall/)
-
 ## Altro  
 
 Il design system [Google Material](https://m3.material.io/)
