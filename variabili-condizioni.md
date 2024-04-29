@@ -18,8 +18,7 @@ Tipi di dati:
     https://it.wikipedia.org/wiki/ASCII
 
 "unix" (default) Unix line endings: \n for LF.
-"windows"Windows line endings: \r\n for CRLF.
-
+"windows" Windows line endings: \r\n for CRLF.
 
 Unicode!
 
@@ -113,7 +112,6 @@ https://www.asciiart.eu/text-to-ascii-art
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures info
 
 
-
 VIM
 
 cmd terminale
@@ -124,16 +122,12 @@ gitlab
 
 scaffolding
 
-
 css bem 
 import
 
-deploy pubblicare
+deploy pubblicare + siti
 
 cdn
-
-
-
 
 dominio
 siti
