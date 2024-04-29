@@ -76,6 +76,9 @@ print(messaggio);
 let nome = prompt("Ciao, inserisci il tuo nome");
 console.log("Ciao " + nome + "!");
 ```
+Es: Login inserisci nome e poi password con prompt
+poi alert: "puoi entrare: true"
+
 ## Invertire due variabili
 
 ```
@@ -92,9 +95,10 @@ Immagina di dover scambiare contenuto di due bicchieri.
 
 ## Conversione
 
-parseInt
+parseInt e typeof
 
-typeof
+es: Somma
+
 
 ![js tipi dati](/img/webdev101-js-datatypes.png)
 

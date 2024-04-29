@@ -34,8 +34,7 @@ https://github.com/girliemac/a-picture-is-worth-a-1000-words)
   - Oggetti
   - Asincronicità
   - Eventi
-- PHP
-  - GET / POST
+  - fetch GET / POST
 - JSON
 - API
 - Accessibilità
