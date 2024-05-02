@@ -6,4 +6,4 @@
 
 3 - [condizioni](https://github.com/lichfolky/intro-web-dev/blob/main/condizioni.md)
 
-4 - [condizioni](https://github.com/lichfolky/intro-web-dev/blob/main/cicli.md)
+4 - [cicli](https://github.com/lichfolky/intro-web-dev/blob/main/cicli.md)
