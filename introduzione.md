@@ -29,7 +29,7 @@ https://github.com/girliemac/a-picture-is-worth-a-1000-words)
   - Variabili
   - Condizioni
   - Cicli
-  - Array
+  - Liste
   - Manipolazione DOM
   - Oggetti
   - Asincronicità
@@ -63,3 +63,6 @@ Il design system [Google Material](https://m3.material.io/)
 [NVDA](https://www.nvaccess.org/) Il più diffuso screen reader open source.
 
 [Video che parla di Image compression](https://www.youtube.com/watch?v=F1kYBnY6mwg) con [jakearchibald](https://jakearchibald.com/), autore della serie sullo sviluppo web più approfondita che c'è: [HTTP 203](https://www.youtube.com/playlist?list=PLNYkxOF6rcIAKIQFsNbV0JDws_G_bnNo9) purtroppo terminata nel 2023.
+
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf  

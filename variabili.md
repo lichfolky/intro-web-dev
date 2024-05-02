@@ -1,4 +1,17 @@
-# Tipi di dati
+# Variabili
+
+## Deploy sito web 
+
+Abbiamo visto https://github.com/lichfolky/my-landing,
+e la mia versione di worthy-five
+Esando github e https://www.netlify.com/
+L'abbiamo pubblicata online
+
+netlify è un hosting con CDN 
+
+abbiamo visto come registrare e cercare domini web
+
+## Le rappresentazioni dei dati
 
 bit, byte rappresentazione binaria, decimale ed esadecimale
 
@@ -8,24 +21,28 @@ RGB (Red, green, blue)
 
 ASCII (American Standard Code for Information Interchange)
 
-Tipi di dati:
+```
+             ▄           
+    ▄█▀█▓ ▄▓▀▀█▀ ▀▀▀█▓▀▀ ▀▀   
+   ██  ██ ▀██▄▄ ▄█  ▀ ░▒ ░▒   
+   █▓▄▀██  ▄ ▀█▌▓█    ▒▓ ▒▓   
+   █▒  █▓ ██▄▓▀ ▀█▄▄█▄▓█ ▓█   
+       ▀▒           ▀  ▀ █▀   
+```
 
-- booleani 
-- numeri
-
-- char 
-    https://www.asciitable.com/
-    https://it.wikipedia.org/wiki/ASCII
+https://www.asciitable.com/
+https://it.wikipedia.org/wiki/ASCII
 
 "unix" (default) Unix line endings: \n for LF.
-"windows" Windows line endings: \r\n for CRLF.
+"windows"Windows line endings: \r\n for CRLF.
 
-Unicode!
+## Unicode!
 
-    ctrl + cmd + space MAC
-    tasto win + '.'
+Emoticons
+`ctrl + cmd + space` MAC
+`tasto win + '.'` WIN
 
-    https://it.wikipedia.org/wiki/Unicode (UTF-8)
+https://it.wikipedia.org/wiki/Unicode (UTF-8)
 
 modificatori:
 
@@ -33,8 +50,13 @@ modificatori:
 
 zalgo text
 
-- stringhe
-  non è un tipo di dato primitivo
+## Tipi di dati in js
+
+number
+string
+bool
+`undefined`
+`null`
 
 undefined e null
 
@@ -52,7 +74,10 @@ console.log(result); // 421
 let e const
 dichiarazione, inizializzazione
 
+scope
+
 ## Espressioni
+
 Operatori logici AND OR NOT
 
 Tabelle di verità
@@ -69,6 +94,7 @@ Operatori di confronto < <= > >= != ==
 let messaggio = "ciao mondo";
 console.log(messaggio);
 ```
+
 ## Benvenuto `<inserisci nome>`
 
 ```
@@ -96,14 +122,10 @@ Immagina di dover scambiare contenuto di due bicchieri.
 
 parseInt e typeof
 
-
 ## ESERCIZIO A CASA
 es: chiedi due numeri e stampa in console la loro somma
 
-
 ![js tipi dati](/img/webdev101-js-datatypes.png)
-
-![js logica](/img/webdev101-js-decisions.png)
 
 ## Extra
 
@@ -111,12 +133,7 @@ https://www.asciiart.eu/text-to-ascii-art
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures info
 
-
 VIM
-
-cmd terminale
-
-git -v
 
 gitlab
 
@@ -125,18 +142,7 @@ scaffolding
 css bem 
 import
 
-deploy pubblicare + siti
-
-cdn
-
-dominio
-siti
-
-scope
-
-deprecata 
-undefined null
-
-
-  git config --global user.email "mattia.folcarelli@gmail.com"
-  git config --global user.name "Mattia Folcarelli"
+```
+    git config --global user.email "mattia.folcarelli@gmail.com"
+    git config --global user.name "Mattia Folcarelli"
+```
