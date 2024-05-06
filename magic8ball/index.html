@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="scripts/script.js" defer></script>
 </head>
+
 <body>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            color: whitesmoke;
+        }
+
+        .wrapper {
+            background-color: black;
+            border-radius: 50%;
+            aspect-ratio: 1;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .piccolo {
+            border-radius: 50%;
+            aspect-ratio: 1;
+            height: 40vh;
+            background-color: #5252db;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .risposta{
+            width: 95%;
+            color: hsl(240, 66%, 89%);
+
+        }
+    </style>
     <div class="wrapper">
-        <h1 class="risposta"></h1>
+        <div class="piccolo">
+                <h1 class="risposta"></h1>
+        </div>
+
     </div>
 </body>
+
 </html>

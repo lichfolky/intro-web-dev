@@ -19,7 +19,7 @@ let risposte = [
     "Non posso predirlo ora",
     "Concentrati e rifai la domanda",
     "Non ci contare",
-    "La mia risposta è no",
+    "La mia risposta è no!",
     "Le mie fonti dicono di no",
     "Le prospettive non sono buone",
     "Molto incerto"];
@@ -58,6 +58,6 @@ function getRandomIntInclusive(min, max) {
 }
 
 
-let rng = getRandomIntInclusive(1,20)
+let rng = getRandomIntInclusive(0,19)
 let rispostaElement = document.querySelector('.risposta')
 rispostaElement.innerText = risposte[rng]

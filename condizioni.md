@@ -31,7 +31,7 @@ numero uguale, maggiore o minore?
 Una funzione è la definizione di un blocco di istruzioni, che viene invocata o "chiamata" attraverso il suo nome e assegnando dei valori ai suoi parametri, se li possiede. I parametri di ingresso (le variabili dentro le parentesi tonde) sono assegnati dalla chiamata della funzione, e questa può restituire un valore con return
 
 
-```
+```js
 // DEFINIZIONE FUNZIONE, a e b sono i suoi parametri
 function somma(a,b){
     let aInt = parseInt(a);
@@ -57,3 +57,8 @@ Come cambiare testo di un Elemento DOM, lo posso selezionare scrivendo una query
 let elementoHTML = document.querySelector(".classe");
 elementoHTML.innerText = "Hello HTML";
 ```
+
+
+scope variabile
+
+
