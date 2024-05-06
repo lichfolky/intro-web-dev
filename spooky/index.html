@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        .container {
+            border: 7px dashed #333333;
+            aspect-ratio: 1;
+            overflow: hidden;
+        }
+
+        #ghost {
+            width: 400px;
+            height: 400px;
+
+            margin: 0 auto;
+            opacity: 0.8;
+            transition: 2s all;
+            cursor: pointer;
+            transform: scale(2);
+        }
+
+        #ghost.nascosto {
+            opacity: 0;
+            transform: scale(1);
+        }
+
+
+    </style>
+    <div class="wrapper">
+        <audio controls src="spooky.mp3"></audio>
+        <div class="container">
+            <img id="ghost" class="nascosto" src="../img/ghost.png" alt="ghost">
+        </div>
+    </div>
+
+    <script>
+
+        let visibile = false;
+
+        function sparisci(event) {
+            console.log("event:", event)
+            music.play();
+            if (visibile) {
+                console.log("SPARISCOOOO!")
+                fantasmino.classList.add("nascosto")
+                visibile = false;
+            } else {
+                console.log("RIECCOMI!")
+                fantasmino.classList.remove("nascosto")
+                visibile = true;
+            }
+        }
+
+        function entra() {
+            console.log("enter");
+            if (!visibile) {
+                console.log("RIECCOMI!")
+                fantasmino.classList.remove("nascosto")
+                visibile = true;
+            }
+        }
+
+        function esci() {
+
+            console.log("leave");
+
+            if (visibile) {
+                console.log("SPARISCOOOO!")
+                fantasmino.classList.add("nascosto")
+                visibile = false;
+            }
+        }
+
+        let fantasmino = document.querySelector("#ghost")
+        // let fantasmino = document.getElementById("ghost")
+        // fantasmino.style.opacity=1;
+
+        fantasmino.onclick = sparisci
+        // fantasmino.addEventListener("click",sparisci)
+        fantasmino.onmouseenter = entra
+        fantasmino.onmouseleave = esci
+
+        let music = document.querySelector("audio")
+
+    </script>
+</body>
+
+</html>
