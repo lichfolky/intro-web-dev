@@ -56,3 +56,8 @@ function getRandomIntInclusive(min, max) {
     const maxFloored = Math.floor(max);
     return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
 }
+
+
+let rng = getRandomIntInclusive(1,20)
+let rispostaElement = document.querySelector('.risposta')
+rispostaElement.innerText = risposte[rng]

@@ -5,17 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <style>
+    body{
+          font-family: 'Jacquard 12 Charted';
+    }
+    </style>
     <h1>Somma!</h1>
     <script>
+
+
+        function miaSommaDiStringhe(input1, input2){
+            let num1 = parseInt(input1);
+            let num2 = parseInt(input2);
+            
+            let somma = num1 + num2;
+
+            return somma;
+        }
+
         let inputNum1 = prompt("Inserisci un numero: ");
         let inputNum2 = prompt("Inserisci un altro numero: ");
-        let num1 = parseInt(inputNum1);
-        let num2 = parseInt(inputNum1);
-        let somma = num1 + num2;
-        alert("La somma è " + somma)
+
+        console.log("La somma è " + miaSommaDiStringhe(inputNum1, inputNum2))
     </script>
 </body>
 
