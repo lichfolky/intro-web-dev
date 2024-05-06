@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ghost</title>
 </head>
 
 <body>
@@ -24,6 +24,8 @@
             border: 7px dashed #333333;
             aspect-ratio: 1;
             overflow: hidden;
+            cursor: pointer;
+
         }
 
         #ghost {
@@ -33,38 +35,42 @@
             margin: 0 auto;
             opacity: 0.8;
             transition: 2s all;
-            cursor: pointer;
-            transform: scale(2);
+            transform: scale(1);
         }
 
         #ghost.nascosto {
             opacity: 0;
-            transform: scale(1);
+            transform: scale(0.4);
         }
 
-
+        .player {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+        }
     </style>
     <div class="wrapper">
-        <audio controls src="spooky.mp3"></audio>
         <div class="container">
             <img id="ghost" class="nascosto" src="../img/ghost.png" alt="ghost">
         </div>
     </div>
-
+    <div class="player">
+        <audio controls src="boooo.mp3"></audio>
+    </div>
     <script>
 
         let visibile = false;
 
         function sparisci(event) {
-            console.log("event:", event)
+            console.log("event:", event);
             music.play();
             if (visibile) {
-                console.log("SPARISCOOOO!")
-                fantasmino.classList.add("nascosto")
+                console.log("SPARISCOOOO!");
+                fantasmino.classList.add("nascosto");
                 visibile = false;
             } else {
-                console.log("RIECCOMI!")
-                fantasmino.classList.remove("nascosto")
+                console.log("RIECCOMI!");
+                fantasmino.classList.remove("nascosto");
                 visibile = true;
             }
         }
@@ -72,31 +78,32 @@
         function entra() {
             console.log("enter");
             if (!visibile) {
-                console.log("RIECCOMI!")
-                fantasmino.classList.remove("nascosto")
+                console.log("RIECCOMI!");
+                fantasmino.classList.remove("nascosto");
                 visibile = true;
             }
         }
 
         function esci() {
-
             console.log("leave");
-
             if (visibile) {
-                console.log("SPARISCOOOO!")
-                fantasmino.classList.add("nascosto")
+                console.log("SPARISCOOOO!");
+                fantasmino.classList.add("nascosto");
                 visibile = false;
             }
         }
 
-        let fantasmino = document.querySelector("#ghost")
+        let fantasmino = document.querySelector("#ghost");
         // let fantasmino = document.getElementById("ghost")
         // fantasmino.style.opacity=1;
 
-        fantasmino.onclick = sparisci
+        let container = document.querySelector(".container");
+
+
+        fantasmino.onclick = sparisci;
         // fantasmino.addEventListener("click",sparisci)
-        fantasmino.onmouseenter = entra
-        fantasmino.onmouseleave = esci
+        container.onmouseenter = entra;
+        container.onmouseleave = esci;
 
         let music = document.querySelector("audio")
 
