@@ -19,13 +19,10 @@ Array.prototype.slice()
 
 Array.prototype.splice()
 
-alcune funzioni sono "inplace" altre restituiscono un nuovo array modificato
-
+alcune funzioni sono "in place" altre restituiscono un nuovo array modificato
 
 TODO
 sort(compareFn)
-
-
 
 Libreria 
 
