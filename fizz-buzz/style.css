@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: oklch(0.76 0.19 325);
+    border: 2px solid black;
+    
+    display: grid;
+    place-content: center;
+}
+
+.fizz{
+    background-color: oklch(0.76 0.19 290);
+}
+
+.buzz{
+    background-color: oklch(0.76 0.19 250);
+}
+
+.fizz-buzz{
+    background-color: oklch(0.76 0.19 20);
+}

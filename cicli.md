@@ -2,10 +2,53 @@
 
 iterano per vero
 
+flow chart
+
+let conta = 10
+while (conta >= 0) {
+    //console.log(conta)
+    conta--
+}
+
+let risposta = "si"
+do{
+    console.log("...")
+    risposta = prompt("il programma è bloccato continuare? ")
+}while(risposta == "si") // se questa è vera, io continuo a ciclare
+
+while (false) {// cambia in true
+    console.log("...")
+    let risposta = prompt("Uscire?")
+    if (risposta == "si") {
+        break
+    }
+}
+
+conta = 10
+for (; conta >= 0;) {
+    conta--
+}
+
+// stampa i numeri dispari da 1 a 100
+for (let i = 1; i < 101; i = i + 2) {
+    //console.log(i)
+}
+
+// stampa i numeri dispari da 1 a 100
+for (let i = 0; i <= 100; i++) {
+    if (i % 2 == 1) { 
+        console.log(i) 
+    } else {
+        console.log("PARI")
+    }
+}
+
+
+## Esercizio: fizz buzz
 
 - https://en.wikipedia.org/wiki/Fizz_buzz
 
-3,5
+
 
 - stampiamo una lista della spesa (tipo todolist)
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/checkbox
