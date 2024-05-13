@@ -1,0 +1,41 @@
+@font-face {
+    font-family: ouroboros;
+    src: url("../fonts/Ouroboros-Regular.woff2");
+  }
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 2rem 0;
+}
+
+body{
+    background-color: hsl(23, 47%, 5%);
+    padding: 1rem 0 ;
+    font-size: 1rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    padding: 2rem;
+    max-width: 600px;
+    aspect-ratio:  1800 / 3805;
+    margin: 0 auto;
+    background-color: #f56f5d;
+    min-height: 100vh;
+  }
+
+  main{
+  }
+
+  header{
+    font-family: ouroboros;
+    text-align: right;
+    font-size: 6rem;
+    letter-spacing: -0.4rem;
+  }
