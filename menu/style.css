@@ -53,10 +53,17 @@ footer {
 }
 
 .menu-item {
+  font-weight: 600;
+  font-size: 1rem;
+ }
+
+
+.old-menu-item {
   font-weight: 745;
   font-size: 1.44rem;
   letter-spacing: -0.02rem;
 }
+
 
 .menu-item.right{
   text-align: right;
@@ -76,8 +83,15 @@ a {
   display: block;
 }
 
+img.teschietto{
+  width: 45px;
+  display: block;
+}
+
 .container{
   display: flex;
+  align-items: flex-end;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+  padding-inline: 1rem;
 }
