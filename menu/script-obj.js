@@ -65,13 +65,17 @@ let menuItems = [
         ingredients: ["Hachiya Gazpacho", "Pink Lady Aguachile", "Mussels Escabeche", "Green Zebra Tomatoes", "Fuyu Persimmon", "Pumpkin Spice Labne"],
         vegan: false,
         glutenFree: true
-    }, {
-        name: "PANANG LAMB NECK",
-        price: 29,
-        ingredients: ["Saffron Bao", "Persimmon Amba", "Conserva Raro", "Pomegranate Molasses", "Brusselkraut"],
-        vegan: false,
-        glutenFree: false
     }]
+
+let newRecipe = {
+    name: "PANANG LAMB NECK",
+    price: 29,
+    ingredients: ["Saffron Bao", "Persimmon Amba", "Conserva Raro", "Pomegranate Molasses", "Brusselkraut"],
+    vegan: false,
+    glutenFree: false
+}
+
+menuItems.push(newRecipe)
 
 
 // (V-GE)
@@ -82,9 +86,22 @@ let direction = "left"
 let numberOfSkulls = 1
 for (let i = 0; i < menuItems.length; i++) {
 
+    let menuItem = document.createElement("div")    
+    menuItem.classList.add("menu-item")
+
     let menuItemName = document.createElement("div")
-    menuItemName.innerText = menuItems[i].name + " " + menuItems[i].price
-    menuItemName.classList.add("menu-item")
+    let menuItemIngredients = document.createElement("div")
+     menuItemIngredients.classList.add("ingredients")
+    menuItemName.innerText = menuItems[i].name + " "
+    
+    if(menuItems[i].vegan == true){
+        menuItemName.innerText += "(VEG)"
+
+    }
+    menuItemName.innerText += " " + menuItems[i].price
+    menuItemIngredients.innerText =  menuItems[i].ingredients.join(", ")
+    menuItem.append(menuItemName)
+    menuItem.append(menuItemIngredients)
 
     // se l'elemento è un multiplo di 4
     if (i % 4 == 0) {
@@ -108,7 +125,7 @@ for (let i = 0; i < menuItems.length; i++) {
         }
         for (skulls = 1; skulls <= numberOfSkulls; skulls++) {
             let teschietto = document.createElement("img")
-            teschietto.src = "img/skull"+skulls+".png"
+            teschietto.src = "img/skull" + skulls + ".png"
             teschietto.classList.add("teschietto")
             container.append(teschietto)
         }
@@ -118,8 +135,8 @@ for (let i = 0; i < menuItems.length; i++) {
     }
 
     if (direction == "right") {
-        menuItemName.classList.add("right")
+        menuItem.classList.add("right")
     }
 
-    mainElement.append(menuItemName)
+    mainElement.append(menuItem)
 }

@@ -95,3 +95,12 @@ img.teschietto{
   padding-bottom: 0.5rem;
   padding-inline: 1rem;
 }
+
+.ingredients{
+  font-size: 0.8rem;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
