@@ -84,3 +84,11 @@ Hachiya Gazpacho, Pink Lady Aguachile, Mussels Escabeche,
 Green Zebra Tomatoes, Fuyu Persimmon, Pumpkin Spice Labne
 PANANG LAMB NECK 29
 Saffron Bao, Persimmon Amba, Conserva Raro, Pomegranate Molasses, Brusselkraut
+
+
+control shift p
+
+for of
+
+
+variabile canarinp
