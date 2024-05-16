@@ -1,0 +1,29 @@
+.img {
+    height: 500px;
+    width: 500px;
+    border-radius: 10%;
+    margin: 20px;
+}
+.next, .previous {
+    height: 60px;
+    width: 90px;
+    border-radius: 10%;
+    background-color: rgb(236, 202, 4);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin: 10px 100px 0 110px;
+    cursor: pointer;
+}
+.carusel {
+    margin: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+}
