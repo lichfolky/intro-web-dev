@@ -5,12 +5,13 @@
 
 body{
     font-size: 2rem;
+    accent-color: crimson;
 }
 
-nav{
-
-    background-color: crimson;
-
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    height: 9000px;
 }
 
 .nav-container{
@@ -21,9 +22,11 @@ nav{
     margin: 0 auto;
 }
 
-main{
-    max-width: 800px;
-    margin: 0 auto;
+nav{
+    position: sticky;
+    background-color: crimson;
+    top: 0px;
+
 }
 
 nav .logo{
@@ -43,4 +46,23 @@ nav a{
     text-decoration: none;
     font-weight: 700;
     font-size: 1.6rem;
+}
+
+input[type='checkbox']:checked + label {
+    text-decoration-line: line-through;
+}
+
+input[type='checkbox']{
+    opacity: 0;
+}
+
+button.add{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    border: 0 solid black;
+    background-color: white;
+    font-size: 8rem;
+    cursor: pointer;
 }
