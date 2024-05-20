@@ -31,9 +31,9 @@ https://github.com/girliemac/a-picture-is-worth-a-1000-words)
   - Cicli
   - Liste
   - Manipolazione DOM
+  - Eventi
   - Oggetti
   - Asincronicità
-  - Eventi
   - fetch GET / POST
 - JSON
 - API
