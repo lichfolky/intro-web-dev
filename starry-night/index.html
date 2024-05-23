@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
+</head>
+
+<body>
+    <style>
+        body {
+            color: #FDCA40;
+            background: hsl(209 89% 9% / 1);
+        }
+    </style>
+    <h1>test</h1>
+    <a-scene>
+        <a-sphere id="sfera" position="0 1.25 -5" radius="1" color="#FDCA40"></a-sphere>
+        <a-sky color="#03182b"></a-sky>
+    </a-scene>
+</body>
+<script>
+    let sceneElement = document.querySelector('a-scene');
+    let sfera = document.getElementById("sfera");
+    sfera.setAttribute("radius", "0.05")
+
+    nuovaStella = document.createElement("a-sphere")
+    nuovaStella.setAttribute("position", { x: 1, y: 2, z: -3 })
+    nuovaStella.setAttribute("radius", "0.05")
+    nuovaStella.setAttribute("color", "#FDCA40")
+
+    sceneElement.appendChild(nuovaStella)
+
+    function getRandomIntInclusive(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+    }
+
+    function stellaRng(){
+        return (Math.random()-0.5)*100
+    }
+
+    function addStella(event) {
+        for (let s = 0; s < 101; s++) {
+
+            console.log(event)
+            nuovaStella = document.createElement("a-sphere")
+            nuovaStella.setAttribute("position", { x: stellaRng(), y: stellaRng(), z:  stellaRng() })
+            nuovaStella.setAttribute("radius", "0.05")
+            nuovaStella.setAttribute("color", "#FDCA40")
+
+            sceneElement.appendChild(nuovaStella)
+        }
+    }
+
+    sceneElement.addEventListener("click", addStella)
+</script>
+
+</html>
