@@ -7,14 +7,19 @@
 <input type="checkbox" id="item-2" name="item" />
 <label for="item-2">Item 2</label>
 </div> */
-
-let listaSpesa = [
-    { nome: "insalata", preso: true },
-    { nome: "pasta", preso: true },
-    { nome: "patatine fritte", preso: true },
-    { nome: "gelato", preso: true }]
+let listaSpesaStringa = localStorage.getItem("listaSpesa")
+if (listaSpesaStringa != null) {
+    listaSpesa = JSON.parse(listaSpesaStringa)
+} else {
+    listaSpesa = [
+        { nome: "insalata", preso: true },
+        { nome: "pasta", preso: true },
+        { nome: "patatine fritte", preso: true },
+        { nome: "gelato", preso: true }]
+}
 
 let fsElement = document.querySelector("fieldset")
+let newItemElement = document.querySelector("#new-item")
 let contatore = 0
 
 for (const item of listaSpesa) {
@@ -41,8 +46,12 @@ function createField(item) {
 }
 
 function addItem() {
-    let myItem = { nome: "Item " + contatore, preso: false }
+    // let myItem = { nome: "Item " + contatore, preso: false }
+    let myItem = { nome: newItemElement.value, preso: false }
     listaSpesa.push(myItem)
+    newItemElement.value = ""
+
+    localStorage.setItem('listaSpesa', JSON.stringify(listaSpesa));
     console.log("myItem", myItem)
     createField(myItem)
 }

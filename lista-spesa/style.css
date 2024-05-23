@@ -11,7 +11,6 @@ body{
 main{
     max-width: 800px;
     margin: 0 auto;
-    height: 9000px;
 }
 
 .nav-container{
@@ -56,13 +55,41 @@ input[type='checkbox']{
     opacity: 0;
 }
 
+
+.add-group{
+
+ 
+    /*
+    left: 50%;
+    transform: translateX(-50%);
+    */
+}
+
+#new-item{
+    position: fixed;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);;
+    width: 800px;
+    font-size: 4rem;
+    padding: 0 1rem;
+    border: 3px solid black;
+}
+
 button.add{
+
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 1rem;
+    transform: translateX(-50%);
 
     border: 0 solid black;
     background-color: white;
     font-size: 8rem;
+    cursor: pointer;
+}
+
+fieldset label{
+    user-select: none;
     cursor: pointer;
 }
